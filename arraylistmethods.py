@@ -11,12 +11,17 @@ print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
 
 print()
 array_ = [12,15,48,49,562,41,705,25,214,25]
-print(array_)
 
 menu_option = ["Add an element","Insert an element","Modify an element",
                "Delete an element","Arrange in ascending order","Arrange in descending order",
                "Rotate array","Shuffle arrays","Clear array"]
 
 
-exit_ = False
-start = True
+def _start(main_array,menu_op):
+    print("-"*20)
+    print(f"Array: {main_array}")
+    print("Menu:")
+
+
+
+
