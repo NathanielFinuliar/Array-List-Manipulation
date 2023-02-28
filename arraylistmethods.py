@@ -16,3 +16,7 @@ print(array_)
 menu_option = ["Add an element","Insert an element","Modify an element",
                "Delete an element","Arrange in ascending order","Arrange in descending order",
                "Rotate array","Shuffle arrays","Clear array"]
+
+
+exit_ = False
+start = True
