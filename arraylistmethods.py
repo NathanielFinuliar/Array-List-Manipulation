@@ -21,7 +21,6 @@ def _start(main_array,menu_op):
     print("-"*20)
     print(f"Array: {main_array}")
     print("Menu:")
-
-
-
-
+    for i in range(len(menu_op)):
+        print(f"{i+1} -> {menu_op[i]}")
+    print("-"*20)
