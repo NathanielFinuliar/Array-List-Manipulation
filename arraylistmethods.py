@@ -100,5 +100,12 @@ while not exit_:
     if start:
         function_runner()
         start = False
+    pull_request = input("Do you want to do anything else (y/n)? : ")
+    if pull_request.lower() in ['y','n']:
+        if pull_request.lower() == 'n':
+            print("Exiting...")
+            exit_ = True
+        else:
+            function_runner()
     else:
         print("Invalid input try again!")
