@@ -86,3 +86,6 @@ def sort_array(main_array):
 def reverse_array(main_array):
     main_array = main_array.sort(reverse=True)
     print("Array has been sorted in descending order")
+
+menu_function = {1:add_element,2:insert_element,3:modify_element,
+                 4:remove_element,5:sort_array,6:reverse_array}
