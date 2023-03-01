@@ -15,6 +15,7 @@ menu_option = ["Add an element","Insert an element","Modify an element",
                "Delete an element","Arrange in ascending order","Arrange in descending order",
                "Rotate array","Shuffle arrays","Clear array"]
 
+
 def _start(main_array,menu_op):
     print(" "*20)
     print(f"Array: {main_array}")
