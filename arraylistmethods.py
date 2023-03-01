@@ -9,7 +9,6 @@ from collections import deque
 # print("|"," "*16, " "*28, "|")
 # print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
 
-print()
 array_ = [12,15,48,49,562,41,705,25,214,25]
 
 menu_option = ["Add an element","Insert an element","Modify an element",
@@ -87,6 +86,8 @@ def reverse_array(main_array):
     main_array = main_array.sort(reverse=True)
     print("Array has been sorted in descending order")
 
+def rotate_element(main_array):
+
 def shuffle_array(main_array):
     x = rd.shuffle(main_array)
     main_array = x 
@@ -102,7 +103,7 @@ def clear_array(main_array):
 
 menu_function = {1:add_element,2:insert_element,3:modify_element,
                  4:remove_element,5:sort_array,6:reverse_array, 
-                 7:shuffle_array,8:clear_array}
+                 7:rotate_element, 8:shuffle_array,9:clear_array}
 
 def function_runner():
     menu_function[_start(array_,menu_option)](array_)
