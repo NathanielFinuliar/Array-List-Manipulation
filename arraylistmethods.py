@@ -37,6 +37,8 @@ def add_element(main_array):
     while True:
         try:
             s = int(input("Enter value you want to add: "))
+            main_array.append(s)
+            print(f"{s} has been added to array")
             return
         except:
             print("Invalid input try again!")
