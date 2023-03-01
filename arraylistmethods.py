@@ -34,4 +34,9 @@ def _start(main_array,menu_op):
             print("Invalid input try again!")
 
 def add_element(main_array):
-
+    while True:
+        try:
+            s = int(input("Enter value you want to add: "))
+            return
+        except:
+            print("Invalid input try again!")
