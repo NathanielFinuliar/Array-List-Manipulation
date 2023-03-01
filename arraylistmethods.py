@@ -93,3 +93,6 @@ menu_function = {1:add_element,2:insert_element,3:modify_element,
 def function_runner():
     menu_function[_start(array_,menu_option)](array_)
     print(f"This is the new array : {array_}")
+
+exit_ = False
+start = True
