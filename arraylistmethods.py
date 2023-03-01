@@ -48,5 +48,8 @@ def insert_element(main_array):
     while True:
         try:
             index,value = [int(i) for i in input("Enter the index follow up by the value you want to add: ").split()]
+            main_array.insert(index,value)
+            print(f"{value} has been added to array at the index of {index}")
+            return
         except:
             print("Invalid input try again!")
