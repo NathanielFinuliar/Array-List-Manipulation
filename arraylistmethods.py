@@ -16,7 +16,6 @@ menu_option = ["Add an element","Insert an element","Modify an element",
                "Delete an element","Arrange in ascending order","Arrange in descending order",
                "Rotate array","Shuffle arrays","Clear array"]
 
-
 def _start(main_array,menu_op):
     print("-"*20)
     print(f"Array: {main_array}")
@@ -24,3 +23,15 @@ def _start(main_array,menu_op):
     for i in range(len(menu_op)):
         print(f"{i+1} -> {menu_op[i]}")
     print("-"*20)
+    while True:
+        try:
+            option_select = int(input("What you want to do? (1-9) : "))
+            if option_select in range(1,10):
+                return option_select
+            else:
+                print("Range Exceeded!")
+        except:
+            print("Invalid input try again!")
+
+
+
