@@ -80,4 +80,5 @@ def remove_element(main_array):
             print("Invalid input try again!")
 
 def sort_array(main_array):
+    main_array = main_array.sort()
     print("Array has been sorted in ascending order")
