@@ -87,8 +87,11 @@ def reverse_array(main_array):
     main_array = main_array.sort(reverse=True)
     print("Array has been sorted in descending order")
 
+def shuffle_array(main_array):
+    print("Array has been shuffled")
+
 menu_function = {1:add_element,2:insert_element,3:modify_element,
-                 4:remove_element,5:sort_array,6:reverse_array}
+                 4:remove_element,5:sort_array,6:reverse_array, 7:shuffle_array}
 
 def function_runner():
     menu_function[_start(array_,menu_option)](array_)
