@@ -88,7 +88,11 @@ def reverse_array(main_array):
     print("Array has been sorted in descending order")
 
 def shuffle_array(main_array):
+    x = rd.shuffle(main_array)
+    main_array = x
     print("Array has been shuffled")
+
+
 
 menu_function = {1:add_element,2:insert_element,3:modify_element,
                  4:remove_element,5:sort_array,6:reverse_array, 7:shuffle_array}
