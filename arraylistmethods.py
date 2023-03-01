@@ -87,6 +87,10 @@ def reverse_array(main_array):
     print("Array has been sorted in descending order")
 
 def rotate_element(main_array):
+    global array_ 
+    array_= deque(array_)
+    valid_step= False 
+    valid_side= False
 
 def shuffle_array(main_array):
     x = rd.shuffle(main_array)
