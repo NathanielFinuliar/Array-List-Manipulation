@@ -84,4 +84,5 @@ def sort_array(main_array):
     print("Array has been sorted in ascending order")
 
 def reverse_array(main_array):
+    main_array = main_array.sort(reverse=True)
     print("Array has been sorted in descending order")
