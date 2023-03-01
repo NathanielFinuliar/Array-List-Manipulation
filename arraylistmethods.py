@@ -156,6 +156,9 @@ while not exit_:
     if pull_request.lower() in ['y','n']:
         if pull_request.lower() == 'n':
             print("Exiting...")
+            print("")
+            print("-%-"*3, "THANK YOU FOR USING THIS PROGRAM","-%-"*3,)
+            print("")
             exit_ = True
         else:
             function_runner()
