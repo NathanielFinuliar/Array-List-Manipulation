@@ -1,13 +1,13 @@
 import random as rd
 from collections import deque
 
-print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
-print("|"," "*16, " "*28, "|")
-print("|"," "* 10, "ARRAY LIST MANIPULATION", " " *10,"|")
-print("|"," " * 8, "coded by Nathaniel Finuliar", " " *8,"|")
-print("|"," " * 16, "BSCOE 2-2", " " * 18, "|")
-print("|"," "*16, " "*28, "|")
-print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
+# print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
+# print("|"," "*16, " "*28, "|")
+# print("|"," "* 10, "ARRAY LIST MANIPULATION", " " *10,"|")
+# print("|"," " * 8, "coded by Nathaniel Finuliar", " " *8,"|")
+# print("|"," " * 16, "BSCOE 2-2", " " * 18, "|")
+# print("|"," "*16, " "*28, "|")
+# print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
 
 print()
 array_ = [12,15,48,49,562,41,705,25,214,25]
@@ -89,3 +89,7 @@ def reverse_array(main_array):
 
 menu_function = {1:add_element,2:insert_element,3:modify_element,
                  4:remove_element,5:sort_array,6:reverse_array}
+
+def function_runner():
+    menu_function[_start(array_,menu_option)](array_)
+    print(f"This is the new array : {array_}")
