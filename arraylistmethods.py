@@ -113,6 +113,7 @@ def rotate_element(main_array):
         valid_side = True
     else:
         print("Invalid input try again!")
+    array_ = list(array_)
 
 def shuffle_array(main_array):
     x = rd.shuffle(main_array)
