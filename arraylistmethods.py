@@ -42,3 +42,6 @@ def add_element(main_array):
             return
         except:
             print("Invalid input try again!")
+
+
+def insert_element(main_array):
