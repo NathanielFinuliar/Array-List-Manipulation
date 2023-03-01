@@ -53,3 +53,6 @@ def insert_element(main_array):
             return
         except:
             print("Invalid input try again!")
+
+def modify_element(main_array):
+    
