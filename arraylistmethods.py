@@ -94,6 +94,7 @@ def shuffle_array(main_array):
 
 def clear_array(main_array):
     if len(main_array) > 0:
+        main_array = main_array.clear()
         print("All elements in array have been cleared")
     else:
         print("Array is already emptied")
