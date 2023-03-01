@@ -93,6 +93,10 @@ def shuffle_array(main_array):
     print("Array has been shuffled")
 
 def clear_array(main_array):
+    if len(main_array) > 0:
+        print("All elements in array have been cleared")
+    else:
+        print("Array is already emptied")
 
 
 menu_function = {1:add_element,2:insert_element,3:modify_element,
