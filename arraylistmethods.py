@@ -33,5 +33,5 @@ def _start(main_array,menu_op):
         except:
             print("Invalid input try again!")
 
-
+def add_element(main_array):
 
