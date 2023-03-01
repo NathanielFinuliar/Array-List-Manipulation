@@ -91,6 +91,17 @@ def rotate_element(main_array):
     array_= deque(array_)
     valid_step= False 
     valid_side= False
+    while not valid_step:
+        try:
+            step = int(input("How many steps do you want to rotate? : "))
+            if step > len(array_):
+                print("Step is more than array's length")
+            elif step <= 0:
+                print("Step must be greater than zero")
+            else:
+                valid_step = True
+        except:
+            print("Invalid input try again!")
 
 def shuffle_array(main_array):
     x = rd.shuffle(main_array)
