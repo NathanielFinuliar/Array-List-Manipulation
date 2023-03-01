@@ -64,3 +64,5 @@ def modify_element(main_array):
             return
         except:
             print("Invalid input try again!")    
+
+def remove_element(main_array):
