@@ -102,6 +102,17 @@ def rotate_element(main_array):
                 valid_step = True
         except:
             print("Invalid input try again!")
+        
+    while not valid_side:
+        side = input("Which way you want to rotate? (L for Left / R for Right) : ")
+        if side.upper() == 'L' or side.upper() == 'R':
+            if side.upper() == 'L':
+                array_.rotate(-abs(step))
+        elif side.upper() == 'R':
+            array_.rotate(abs(step))
+        valid_side = True
+    else:
+        print("Invalid input try again!")
 
 def shuffle_array(main_array):
     x = rd.shuffle(main_array)
