@@ -96,3 +96,9 @@ def function_runner():
 
 exit_ = False
 start = True
+while not exit_:
+    if start:
+        function_runner()
+        start = False
+    else:
+        print("Invalid input try again!")
