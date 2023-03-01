@@ -69,6 +69,11 @@ def remove_element(main_array):
     while True:
         try:
             option_del = int(input("Do you want to delete by value or index (value : 1 , index : 2) : "))
+            if option_del == 1:
+                item = int(input("What do you want to delete ? : "))
+            elif option_del == 2:
+                index_del = int(input("Which index do you want to delete ? : "))
+                del main_array[index_del]
             return
         except:
             print("Invalid input try again!")
