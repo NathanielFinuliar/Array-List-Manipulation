@@ -55,4 +55,8 @@ def insert_element(main_array):
             print("Invalid input try again!")
 
 def modify_element(main_array):
-    
+    while True:
+        try:
+            index_m,value_m = [int(i) for i in input("Enter the index follow up by the value you want to modify: ").split()]
+        except:
+            print("Invalid input try again!")    
