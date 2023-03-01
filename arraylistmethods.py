@@ -58,5 +58,9 @@ def modify_element(main_array):
     while True:
         try:
             index_m,value_m = [int(i) for i in input("Enter the index follow up by the value you want to modify: ").split()]
+            temp_value = main_array[index_m]
+            main_array[index_m] = value_m
+            print(f"{temp_value} at the index {index_m} has been modified to {value_m}")
+            return
         except:
             print("Invalid input try again!")    
