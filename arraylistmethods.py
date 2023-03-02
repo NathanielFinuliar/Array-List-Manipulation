@@ -115,11 +115,11 @@ def rotate_element(main_array):
         if side.upper() == 'L' or side.upper() == 'R':
             if side.upper() == 'L':
                 array_.rotate(-abs(step))  # Set the -abs here for left rotate becuase left rotate need negative integer
-        elif side.upper() == 'R':
-            array_.rotate(abs(step)) # Same as above but right need positive integer
-        valid_side = True #If this scope run we set this boolean to True so, the loop won't run again
-    else:
-        print("Invalid input try again!")
+            elif side.upper() == 'R':
+                array_.rotate(abs(step)) # Same as above but right need positive integer
+            valid_side = True #If this scope run we set this boolean to True so, the loop won't run again
+        else:
+            print("Invalid input try again!")
     # Convert array_ to list due of converting array_ to deque object
     array_ = list(array_)
 
